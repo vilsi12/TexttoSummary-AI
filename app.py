@@ -43,7 +43,7 @@ def summarize(data_key):
         return jsonify({"summary_text" : response})
     except Exception as e:
         print(e)
-        return jsonify({"summary_text" : 'Some error happened',"error": f'{e}'})
+        return jsonify({"summary_text" : 'Please check your link is correct',"error": f'{e}'})
 
 
 
